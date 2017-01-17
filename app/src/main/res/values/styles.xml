@@ -1,0 +1,83 @@
+<resources>
+
+    <style name="Base.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/theme_primary_dark</item>
+        <item name="colorPrimaryDark">@color/theme_primary_light</item>
+        <item name="colorAccent">@color/theme_primary_light</item>
+    </style>
+
+    <style name="Base.Theme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/light_red</item>
+    </style>
+
+    <style name="Base.Theme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorAccent">@color/light_green</item>
+    </style>
+
+    <style name="AppTheme.ButtonRed" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="AppTheme.ButtonGreen" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorAccent">@color/theme_primary_accent</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/theme_primary_light</item>
+        <item name="colorControlActivated">@color/theme_primary_accent</item>
+        <item name="textColorAlertDialogListItem">@color/theme_primary_dark</item>
+        <item name="colorAccent">@color/theme_primary_accent</item>
+        <item name="android:textColorPrimary">@color/theme_primary_dark</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.Main" parent="Base.Theme"></style>
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+    <style name="ToolbarPopUp" parent ="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/theme_window_background</item>
+    </style>
+    <style name="TextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+    <style name="TextAppearance.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="SizeSpecificCollapsingToolbarLayout">
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+        <item name="contentScrim">?attr/colorPrimary</item>
+
+    </style>
+    <style name="toolbar_text">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/theme_primary_light</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+</resources>

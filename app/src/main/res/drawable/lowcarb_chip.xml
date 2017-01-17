@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <solid android:color="?attr/colorPrimary"/>
+    <corners android:radius="10dp"/>
+    <height android:layout_height="wrap_content" />
+    <width android:layout_width="wrap_content" />
+    <padding android:left="6dp" android:top="2dp" android:right="2dp" android:bottom="4dp" />
+    <elevation app:elevation="10dp"/>
+</shape>

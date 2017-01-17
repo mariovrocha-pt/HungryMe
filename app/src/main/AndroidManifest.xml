@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.ismai.hungryme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <action android:name="android.intent.action.SEARCH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Main">
+        <activity
+            android:name=".ui.Recipes.RecipesActivity"
+            android:label="Recipes" />
+        <activity android:name=".ui.Recipes.RecipeDetailActivity"
+            android:label="Recipe Details"
+            android:parentActivityName=".ui.Recipes.RecipesActivity" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".ui.Recipes.RecipesActivity" />
+        <activity
+            android:name=".ui.AccountActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Account" />
+
+        <activity android:name=".ui.WebViewActivity" />
+        <activity android:name=".LoginAndRegister.LoginActivity" />
+        <activity android:name=".LoginAndRegister.RegisterActivity" />
+        <activity
+            android:name=".SplashAndWelcomeScreen.SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashAndWelcomeScreen.WelcomeScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".ui.AboutUs" />
+        <activity android:name=".ui.FavoritesActivity"></activity>
+
+        <receiver android:name=".ui.NotificationReceiver"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="10dp"
+                android:elevation="4dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app='http://schemas.android.com/apk/res-auto'
+                    android:id="@+id/user_profile_photo"
+                    android:layout_width="60dp"
+                    android:layout_below="@+id/header_cover_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-40dp"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+                    android:src="@android:drawable/sym_def_app_icon"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="13dp"
+                    app:civ_border_color='#FFF'
+                    app:civ_border_width='1dp'
+                    android:layout_height="60dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnSelectImage"
+                    android:layout_gravity="bottom|end"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_marginLeft="-25dp"
+                    android:layout_alignLeft="@+id/user_profile_email"
+                    android:layout_alignStart="@+id/user_profile_email"
+                    android:layout_above="@+id/user_profile_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/user_profile_photo"
+                    android:layout_centerVertical="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_marginBottom="-45dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="center"
+                    android:layout_toRightOf="@+id/user_profile_photo" />
+
+                <RelativeLayout
+                    android:id="@+id/profile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/header_cover_image"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="4dp"
+                    android:paddingBottom="0dp"
+                    android:layout_height="75dp">
+
+
+                    <TextView
+                        android:id="@+id/user_profile_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:text="admin"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="280dp"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/profile_layout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            style="style/TextAppearance.Small"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:text="Name:"
+                            android:maxLines="1"
+                            />
+
+                        <EditText
+                            android:id="@+id/txtName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.50"
+                            android:ems="10"
+                            android:maxLines="1"
+                            android:maxLength="15"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            style="style/TextAppearance.Small"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:text="Diet:"
+                            android:maxLines="1"
+                            />
+
+                        <Spinner
+                            android:id="@+id/diet_spinner"
+                            android:layout_margin="0dp"
+                            android:layout_width="247dp"
+                            android:layout_height="wrap_content"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:text="Health:"
+                            android:maxLines="1"
+                            />
+
+                        <Spinner
+                            android:id="@+id/health_spinner"
+                            android:layout_margin="0dp"
+                            android:layout_width="247dp"
+                            android:layout_height="wrap_content"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:text="Note:"
+                            android:maxLines="1"
+                            />
+
+                        <EditText
+                            android:id="@+id/txtNote"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.48"
+                            android:ems="10"
+                            android:maxLength="31"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="25dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/btnSubmit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:ems="5"
+                                android:text="Submit"
+                                style="@style/Widget.AppCompat.Button.Colored" />
+
+                            <Button
+                                android:id="@+id/btnCancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:ems="5"
+                                android:text="cancel"
+                                style="@style/Widget.AppCompat.Button.Colored"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/header_cover_image"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/background_cover"
+                    android:layout_marginTop="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="170dp" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <include layout="@layout/include_toolbar" />
+    </RelativeLayout>
+    <include layout="@layout/include_navigation" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_healthy"
+            android:icon="@drawable/pasta"
+            android:title="Healthy" />
+        <item
+            android:id="@+id/nav_casual"
+            android:icon="@drawable/casual"
+            android:title="Casual" />
+        <item
+            android:id="@+id/nav_vegan"
+            android:icon="@drawable/vegan"
+            android:title="Vegan" />
+        <item
+            android:id="@+id/nav_breakfast"
+            android:icon="@drawable/breakfast"
+            android:title="Breakfast" />
+        <item
+            android:id="@+id/nav_desserts"
+            android:icon="@drawable/disserts"
+            android:title="Desserts" />
+        <item
+            android:id="@+id/nav_fast"
+            android:icon="@drawable/heart_share"
+            android:title="Favorites" />
+    </group>
+
+
+    <item android:title="Settings">
+        <menu>
+            <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="Account" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

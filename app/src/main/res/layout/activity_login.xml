@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LoginAndRegister.LoginActivity"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:shadowDx="-4"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:shadowColor="@color/text_shadow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To access all features of the Hungry Me - Recipes App\n You need to login first."
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="35dp"
+        android:shadowDx="-4"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:shadowColor="@color/text_shadow"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Email Address"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:textColor="#FFF"
+        android:textColorHint="#FFFFFF"
+        android:gravity="center"
+        android:id="@+id/emailT"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:shadowColor="@color/text_shadow"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:gravity="center"
+        android:id="@+id/password"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:shadowColor="@color/text_shadow"
+        android:hint="●●●●●●●●●"
+        style="@style/Widget.AppCompat.EditText" />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/btnLogin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Forgot Password"
+            android:shadowDx="-4"
+            android:shadowDy="4"
+            android:shadowRadius="6"
+            android:shadowColor="@color/text_shadow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text=" | "
+            android:shadowDx="-4"
+            android:shadowDy="4"
+            android:shadowRadius="6"
+            android:shadowColor="@color/text_shadow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Create Account"
+            android:id="@+id/registerLink"
+            android:clickable="true"
+            android:onClick="toRegister"
+            android:shadowDx="-4"
+            android:shadowDy="4"
+            android:shadowRadius="6"
+            android:shadowColor="@color/text_shadow"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Hungry Me</string>
+    <string name="settings">Settings</string>
+    <string name="navigation_samples">Samples</string>
+    <string name="navigation_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="hello_blank_fragment"></string>
+    <string name="screen1_title">Unlimited Recipes For You</string>
+    <string name="screen1_desc">Discover new recipes for many categories and tastes, free of cost anytime anywhere.</string>
+    <string name="screen3_title">Be Greedy</string>
+    <string name="screen3_desc">Here you can eat whatever you decide to. Find our desserts and breaksfasts and enjoy them.</string>
+
+    <string-array name="health_labels">
+        <item>Egg-Free</item>
+        <item>Fish-Free</item>
+        <item>Gluten-Free</item>
+        <item>Low-Sugar</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+        <item>Peanut-Free</item>
+    </string-array>
+
+    <string-array name="diet_labels">
+        <item>Balanced</item>
+        <item>High-Fiber</item>
+        <item>High-Protein</item>
+        <item>Low-Carb</item>
+        <item>Low-Fat</item>
+        <item>Low-Sodium</item>
+    </string-array>
+
+</resources>

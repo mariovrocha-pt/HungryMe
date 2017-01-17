@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="My Account">
+
+        <Preference
+            android:title="Username"
+            android:summary="admin"
+            android:key="username" />
+
+        <EditTextPreference
+            android:title="Email"
+            android:summary="admin@example.com"
+            android:key="email" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Advanced">
+
+        <CheckBoxPreference
+            android:title="Receive Notifications"
+            android:summary="Want to receive Push Notifications ?"
+            android:key="receiveNotifications"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:title="Country"
+            android:key="country"></ListPreference>
+            <!--android:entries="@array/country"-->
+            <!--android:entryValues="@array/countryValues" -->
+    </PreferenceCategory>
+</PreferenceScreen>
