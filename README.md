@@ -2,6 +2,9 @@
 
 This repository contains the source code for the Hungry Me Android app.
 
+Try Me:
+https://marvelapp.com/7i4b334
+
 ## What's Hungry Me?
 
 People today tend to have less time for themselves and the daily tasks necessary for their well-being. One of these tasks is cooking their own food, which being an essential task for survival, is of enormous importance for the health of the human being. With this lack of time, the incidence in resort to fast food and take-away restaurants. 
